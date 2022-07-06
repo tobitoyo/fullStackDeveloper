@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secOneColor: #0f0f6c;
+    --secOneText: hsl(0, 0%, 100%);
+    --secOneButton: hsl(240, 44%, 62%);
+}
+
+html {
+    /* Set font size for easy rem calculations
+         * default document font size = 16px, 1rem = 16px, 100% = 16px
+         * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+        */
+        font-size: 62.5%;
+        /* scroll-behavior: smooth; */
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sec-1 {
+    background-color: var(--secOneColor) ;
+    color: var(--secOneText);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2.5rem;
+}
+
+#logo {
+    overflow: hidden;
+    margin: 0 2.5rem;
+}
+
+#logo-img {
+    width: 100%;
+    height: auto;
+}
+
+.fa-bars {
+    font-size: 3rem;
+}
+
+.fa-arrow-up-from-bracket {
+    font-size: 3rem;
+}
+
+#engineer {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 2.5rem;
+    text-align: center;
+
+    /* border: 1px solid white; */
+}
+
+#engineer h1 {
+    font-size: 5rem;
+}
+
+#engr-text {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hire-btn {
+    background-color: var(--secOneButton);
+    color: var(--secOneText);
+    border: none;
+    width: 50%;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
