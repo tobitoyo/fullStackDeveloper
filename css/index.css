@@ -23,6 +23,11 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #sec-1 {
     background-color: var(--secOneColor) ;
     color: var(--secOneText);
@@ -37,6 +42,9 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 2.5rem;
+    position: relative;
+
+    /* border: 1px solid white; */
 }
 
 #logo {
@@ -55,6 +63,40 @@ header {
 
 .fa-arrow-up-from-bracket {
     font-size: 3rem;
+    border: 1px solid white;
+
+}
+
+#social {
+    padding: 1rem;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#social-links {
+    width: 55%;
+    height: 40%;
+    background-color: var(--secOneText);
+    color: var(--secOneColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5%;
+    font-size: 1.7rem;
+    padding: 2rem;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+}
+
+#social-links i {
+    font-size: 2.7rem;
+    margin-right: 1.5rem;
+}
+
+.scl-icons {
+    display: flex;
+    align-items: center;
 }
 
 #engineer {
