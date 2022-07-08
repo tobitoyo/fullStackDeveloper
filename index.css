@@ -8,6 +8,7 @@
     --secOneColor: #0f0f6c;
     --secOneText: hsl(0, 0%, 100%);
     --secOneButton: hsl(240, 44%, 62%);
+    --bodyPad: 2.5rem;
 }
 
 html {
@@ -28,6 +29,10 @@ a {
     color: inherit;
 }
 
+li {
+    margin: 1rem;
+}
+
 #sec-1 {
     background-color: var(--secOneColor) ;
     color: var(--secOneText);
@@ -41,7 +46,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 2.5rem;
+    margin: 0 var(--bodyPad);
     position: relative;
 
     /* border: 1px solid white; */
@@ -49,7 +54,7 @@ header {
 
 #logo {
     overflow: hidden;
-    margin: 0 2.5rem;
+    margin: 0 var(--bodyPad);
 }
 
 #logo-img {
@@ -63,14 +68,14 @@ header {
 
 .fa-arrow-up-from-bracket {
     font-size: 3rem;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
 }
 
 #social {
     padding: 1rem;
     cursor: pointer;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 #social-links {
@@ -78,7 +83,7 @@ header {
     height: 40%;
     background-color: var(--secOneText);
     color: var(--secOneColor);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5%;
@@ -105,7 +110,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 0 2.5rem;
+    margin: 0 var(--bodyPad);
     text-align: center;
 
     /* border: 1px solid white; */
@@ -123,7 +128,7 @@ header {
     justify-content: space-between;
 }
 
-#hire-btn {
+.hire-btn {
     background-color: var(--secOneButton);
     color: var(--secOneText);
     border: none;
@@ -132,4 +137,39 @@ header {
     border-radius: 1rem;
     font-size: 1.5rem;
     font-weight: bolder;
+
+}
+
+#sec-2 {
+    min-height: 100vh;
+    padding: var(--bodyPad);
+    color: var(--secOneColor);
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+#btn-2-div {
+    text-align: center;
+    position: sticky;
+    top: calc(100vh - 8rem); /* calculated with laptop vh
+    may need to adjust for mobile*/
+    /* left: 0; */
+    /* margin: 0 var(--bodyPad) 0 0; */
+    /* width: calc(100% - var(--bodyPad) * 2 ); */
+    /* margin: auto var(--bodyPad); */
+    /* border: 1px solid; */
+    
+}
+
+#btn-2 {
+    border: .2rem solid;
+}
+
+#sec-3 {
+    height: 100vh;
+    
+    background-color: var(--secOneColor);
 }
